@@ -131,6 +131,18 @@ const PosterCreationScreen: React.FC = () => {
         </TouchableOpacity>
       </View>
 
+      {/* Horizontal Line */}
+      <View
+        style={{
+          width: "60%", // control how long the line is
+          height: 7, // thickness of the line
+          backgroundColor: "#ccc",
+          borderRadius: 50, // fully rounded ends
+          alignSelf: "center", // centers horizontally
+          marginVertical: 8, // spacing above/below
+        }}
+      />
+
       {/* Footer */}
       <View style={styles.footer}>
         <View style={styles.footerContent}>
@@ -328,7 +340,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   generateButton: {
-    backgroundColor: "#06B6D4",
+    backgroundColor: "#fff",
     borderRadius: 12,
     paddingVertical: 16,
     flexDirection: "row",
@@ -339,17 +351,18 @@ const styles = StyleSheet.create({
     width: 16,
     height: 16,
     borderRadius: 8,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#4783e9",
     marginRight: 8,
   },
   generateText: {
-    color: "#FFFFFF",
+    color: "#000000",
     fontSize: 16,
     fontWeight: "600",
   },
   footer: {
     paddingHorizontal: 20,
-    paddingBottom: 10,
+    paddingVertical: 15,
+    backgroundColor: "#2f2f2f",
   },
   footerContent: {
     flexDirection: "row",
@@ -370,14 +383,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   creditText: {
-    color: "#6B7280",
-    fontSize: 12,
+    color: "#fff",
+    fontSize: 13,
     marginRight: 4,
+    fontWeight: "400",
   },
   mobbinText: {
     color: "#FFFFFF",
-    fontSize: 12,
-    fontWeight: "500",
+    fontSize: 14,
+    fontWeight: "bold",
   },
 });
 
