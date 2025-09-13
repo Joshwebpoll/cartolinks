@@ -17,6 +17,7 @@ export  const posterTypes: PosterType[] = [
       type: "Display",
       backgroundColor: "#8B4513",
       textColor: "#FFFFFF",
+      image:"/assets/images/promo.jpg"
     },
     {
       id: "2",
